@@ -6,7 +6,7 @@ export default function AddressIP() {
   const [org, setOrg] = useState('');
   const [connection_type, setType] = useState('');
 
-  /* async function getIP() {
+  async function getIP() {
     const response = await axios.get('https://json.geoiplookup.io');
     const { ip, org, connection_type } = response.data;
     setIP(ip);
@@ -14,7 +14,7 @@ export default function AddressIP() {
     setType(connection_type);
   }
 
-  getIP(); */
+  getIP();
 
   return (
     <section className="container-fluid address">

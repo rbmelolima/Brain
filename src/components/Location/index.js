@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 export default function Location() {
-  const position = {
-    lat: 51.505,
-    lng: -0.09,
-    zoom: 13,
-  }
+  const [location, setLocation] = useState([]);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(position => {
+      const { latitude, longitude } = position.coords;     
+      setLocation([
+        latitude, longitude
+      ]);         
+    });
+  }, []);  
 
   return (
     <section className="container-fluid location">
       <h2>Localização</h2>
-
-      
 
     </section>
   );

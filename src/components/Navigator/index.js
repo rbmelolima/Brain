@@ -23,16 +23,16 @@ export default function Navigator() {
           content={userAgent}
         />
         <Card
+          title={"Versão"}
+          content={version}
+        />
+        <Card
           title={"Nome"}
           content={name}
         />
         <Card
           title={"Código"}
           content={code}
-        />
-        <Card
-          title={"Versão"}
-          content={version}
         />
         <Card
           title={"Plataforma"}
@@ -45,7 +45,7 @@ export default function Navigator() {
         <Card
           title={"Status"}
           content={isOnline === true ? "Online" : "Offline"}
-        />  
+        />
         <Card
           title={"Cookies"}
           content={cookies === "true" ? "Ativo" : "Inativo"}
@@ -53,7 +53,7 @@ export default function Navigator() {
         <Card
           title={"Profundidade de cores"}
           content={`${colorDepth} bits`}
-        />  
+        />
       </div>
     </section>
   );
