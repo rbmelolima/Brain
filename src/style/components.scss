@@ -1,0 +1,145 @@
+$pink: #f298b8;
+$green: #81e6d1;
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-fluid {
+  padding: 64px 16px;
+  min-height: 50vh;
+}
+
+header {
+  @include center();
+  min-height: 100vh;
+  background-color: $green;
+
+  img {
+    max-width: 100%;
+  }
+
+  small {
+    color: #ff005b;
+  }
+
+  .header-content {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .header-content p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.container-fluid.address {
+  @include center();
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+}
+
+.container-fluid.clock {
+  @include center();
+  flex-direction: row;
+  color: #fff;
+  background-color: $pink;
+
+  .clock-content {
+    text-align: center;
+  }
+
+  svg {
+    margin-right: 30px;
+  }
+}
+
+.container-fluid.navigator {
+  @media screen and (min-width: 1024px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+}
+
+.card {
+  width: 45%;
+  height: 220px;
+
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 3px rgba(33, 33, 33, 0.25);
+  margin: 8px;
+
+  @media screen and (min-width: 1024px) {
+    width: 220px;
+    height: 220px;
+  }
+
+  @media screen and (max-width: 475px) {
+    width: 100%;
+    height: auto;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.container-fluid.screen {
+  @include center();
+  background-color: $green;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.container-fluid.screen .group-screen {
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 32px;
+  }
+}
+
+.screen-container,
+.ppi-container {
+  margin-bottom: 64px;
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  p {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+}
