@@ -1,5 +1,7 @@
 header {
   min-height: 100vh;
+  padding-left: 16px;
+  padding-right: 16px;
   background: linear-gradient(160.46deg, rgba(46, 88, 255, 0.75) 25.2%, #e8f3ff 60.21%);
 
   display: flex;
@@ -12,16 +14,20 @@ header {
   
   .header-content {
     text-align: start;
-    margin-top: 32px;
     color: #0C227A;
+    margin-right: 16px;
   }
 
   .header-content p {
-    margin-top: 16px;   
     font-weight: 500;
   }
 
   .header-content h1 {
     font-size: 80px;   
+    margin-left: -5px;
+  }
+
+  @media screen and (max-width: 768px){
+    display: inline-flex;
   }
 }
