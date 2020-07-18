@@ -1,0 +1,27 @@
+header {
+  min-height: 100vh;
+  background: linear-gradient(160.46deg, rgba(46, 88, 255, 0.75) 25.2%, #e8f3ff 60.21%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    max-width: 100%;
+  }
+  
+  .header-content {
+    text-align: start;
+    margin-top: 32px;
+    color: #0C227A;
+  }
+
+  .header-content p {
+    margin-top: 16px;   
+    font-weight: 500;
+  }
+
+  .header-content h1 {
+    font-size: 80px;   
+  }
+}
