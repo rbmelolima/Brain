@@ -5,9 +5,15 @@
 ## Objetivo
 Esta é uma demonstração de todos os dados que seu navegador conhece sobre você. Todos esses dados podem ser acessados por qualquer site sem pedir permissão.
 
-## Rodando localmente
-- Clone este projeto em sua máquina
+## :hammer: Instalação
 
-- Instale todas as dependências `npm install`
+```bash
+# Clone este repositório
+git clone https://github.com/rbmelolima/Brain
 
-- Inicie o projeto `np run start`
+# Para instalar todas as dependências do projeto
+yarn
+
+# Para rodar a aplicação
+yarn start
+```
