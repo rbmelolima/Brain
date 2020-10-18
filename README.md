@@ -1,6 +1,6 @@
 # Brain 
 
-!["Imagem da tela inicial"](/image.png)
+!["Imagem da tela inicial"](/index.png)
 
 ## Objetivo
 Esta é uma demonstração de todos os dados que seu navegador conhece sobre você. Todos esses dados podem ser acessados por qualquer site sem pedir permissão.
