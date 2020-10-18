@@ -2,7 +2,7 @@
 
 !["Imagem da tela inicial"](/index.png)
 
-## Objetivo
+## :page_with_curl: Sobre
 Esta é uma demonstração de todos os dados que seu navegador conhece sobre você. Todos esses dados podem ser acessados por qualquer site sem pedir permissão.
 
 ## :hammer: Instalação
